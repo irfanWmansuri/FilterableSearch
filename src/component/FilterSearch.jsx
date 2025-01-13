@@ -10,7 +10,6 @@ export default function FilterSearch() {
     async function fetchData() {
       let url = "https://jsonplaceholder.typicode.com/users";
       let response = await fetch(url);
-
       let admin = await response.json();
       setUserData(admin);
       setIsLoading(false);
